@@ -1,0 +1,21 @@
+.pay {
+    width: 600px;
+    height: 400px;
+    padding: 2rem;
+    margin: auto;
+
+    h2 {
+        margin: 20px 0 40px 0;
+    }
+
+    .StripeElement {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 6px;
+      }
+      
+
+    @media screen and (max-width: 900px) {
+        width: 90%;
+    }
+}

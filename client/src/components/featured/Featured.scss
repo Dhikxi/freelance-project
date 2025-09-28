@@ -1,0 +1,158 @@
+.featured {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+ 
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            padding: 0 40px;
+            width: 640px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: #000;
+
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+
+                span {
+                    font-family: 'Noto Serif Display', serif;
+                    font-weight: 600;
+                }
+
+                @media screen and (max-width: 900px) {
+                    font-size: 45px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                }
+            }
+
+            .search {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 5px;
+                
+                .searchInput {
+                    background-color: #fff;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+                    
+                    input {
+                        width: 100%;
+                        height: 48px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        border-radius: 5px;
+                    }
+                }
+
+                button {
+                    width: 120px;
+                    height: 50px;
+                    font-size: 16px;
+                    border: none;
+                    background-color: #a46886;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 0 5px 5px 0;
+
+                    &:hover{
+                        background-color: #884b6a;
+                      }
+
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                @media screen and (max-width: 900px) {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+
+            .popular {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                button {
+                    color: #fff;
+                    background-color:	 #a46886;
+                    border: 1px solid #000;
+                    padding: 8px 12px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #884b6a;
+                        color: #fff;
+                    }
+                }
+
+                @media screen and (max-width: 900px) {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                top: 100px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+            .right {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top; // adjust crop area
+            }
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
+            }
+
+
+    }
+
+    @media screen and (max-width: 900px) {
+        background-color: #1A1B1D;
+        height: 400px;
+        justify-content: center;
+    }
+}
